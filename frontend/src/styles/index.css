@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+  background: radial-gradient(circle at top left, #0f766e, #020617 55%);
+}
+
+.glass-panel {
+  @apply bg-slate-900/60 border border-slate-800/80 backdrop-blur-lg;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-emerald-900/40 transition hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-semibold text-slate-100 shadow-sm transition hover:border-primary-400 hover:text-primary-100;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-100 shadow-sm outline-none placeholder:text-slate-500 focus:border-primary-400 focus:ring-1 focus:ring-primary-400;
+}
+
+.page-container {
+  @apply flex min-h-screen bg-gradient-to-br from-slate-950 via-slate-950 to-slate-950 text-slate-50;
+}
+
